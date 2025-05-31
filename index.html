@@ -6,86 +6,39 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>טופס 101 - פרטים אישיים</h1>
-  <form action="submit.php" method="POST">
-    <div class="form-group">
-      <label for="first_name">שם פרטי:</label>
-      <input type="text" id="first_name" name="first_name" required>
-    </div>
-
-    <div class="form-group">
-      <label for="last_name">שם משפחה:</label>
-      <input type="text" id="last_name" name="last_name" required>
-    </div>
-
-    <div class="form-group">
-      <label for="id_number">תעודת זהות:</label>
-      <input type="text" id="id_number" name="id_number" maxlength="9" required>
-    </div>
-
-    <div class="form-group">
-      <label for="birth_date">תאריך לידה:</label>
-      <input type="date" id="birth_date" name="birth_date" required>
-    </div>
-
-    <div class="form-group">
-      <label for="phone">מספר טלפון:</label>
-      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
-    </div>
-
-    <div class="form-group">
-      <label for="email">כתובת דוא"ל:</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-
-    <div class="form-group">
-      <label for="marital_status">מצב משפחתי:</label>
-      <select id="marital_status" name="marital_status" required>
-        <option value="">בחר</option>
-        <option value="רווק/ה">רווק/ה</option>
-        <option value="נשוי/אה">נשוי/אה</option>
-        <option value="גרוש/ה">גרוש/ה</option>
-        <option value="אלמן/ה">אלמן/ה</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label for="health_fund">קופת חולים:</label>
-      <select id="health_fund" name="health_fund" required>
-        <option value="">בחר</option>
-        <option value="כללית">כללית</option>
-        <option value="מאוחדת">מאוחדת</option>
-        <option value="מכבי">מכבי</option>
-        <option value="לאומית">לאומית</option>
-        <option value="אחר">אחר</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label for="city">יישוב:</label>
-      <select id="city" name="city" required>
-        <option value="">בחר</option>
-        <option value="תל אביב">תל אביב</option>
-        <option value="ירושלים">ירושלים</option>
-        <option value="חיפה">חיפה</option>
-        <option value="באר שבע">באר שבע</option>
-        <option value="אילת">אילת</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label for="street">רחוב:</label>
-      <select id="street" name="street" required>
-        <option value="">בחר</option>
-        <option value="הרצל">הרצל</option>
-        <option value="אלנבי">אלנבי</option>
-        <option value="העצמאות">העצמאות</option>
-        <option value="דיזנגוף">דיזנגוף</option>
-        <option value="בן גוריון">בן גוריון</option>
-      </select>
-    </div>
-
-    <button type="submit">שלח טופס</button>
-  </form>
+  <div class="form-container">
+    <h1>טופס 101</h1>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="firstName">שם פרטי:</label>
+        <input type="text" id="firstName" name="firstName" required>
+      </div>
+      <div class="form-group">
+        <label for="lastName">שם משפחה:</label>
+        <input type="text" id="lastName" name="lastName" required>
+      </div>
+      <div class="form-group">
+        <label for="idNumber">מספר תעודת זהות:</label>
+        <input type="text" id="idNumber" name="idNumber" required>
+      </div>
+      <div class="form-group">
+        <label for="birthDate">תאריך לידה:</label>
+        <input type="date" id="birthDate" name="birthDate" required>
+      </div>
+      <div class="form-group">
+        <label for="address">כתובת:</label>
+        <input type="text" id="address" name="address" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">מספר טלפון:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="email">דוא"ל:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <button type="submit">שלח</button>
+    </form>
+  </div>
 </body>
 </html>
