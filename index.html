@@ -2,43 +2,96 @@
 <html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>טופס 101</title>
+  <title>טופס 101 - המכללה האקדמית</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="form-container">
-    <h1>טופס 101</h1>
-    <form action="#" method="post">
-      <div class="form-group">
-        <label for="firstName">שם פרטי:</label>
-        <input type="text" id="firstName" name="firstName" required>
-      </div>
-      <div class="form-group">
-        <label for="lastName">שם משפחה:</label>
-        <input type="text" id="lastName" name="lastName" required>
-      </div>
-      <div class="form-group">
-        <label for="idNumber">מספר תעודת זהות:</label>
-        <input type="text" id="idNumber" name="idNumber" required>
-      </div>
-      <div class="form-group">
-        <label for="birthDate">תאריך לידה:</label>
-        <input type="date" id="birthDate" name="birthDate" required>
-      </div>
-      <div class="form-group">
-        <label for="address">כתובת:</label>
-        <input type="text" id="address" name="address" required>
-      </div>
-      <div class="form-group">
-        <label for="phone">מספר טלפון:</label>
-        <input type="tel" id="phone" name="phone" required>
-      </div>
-      <div class="form-group">
-        <label for="email">דוא"ל:</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <button type="submit">שלח</button>
-    </form>
-  </div>
+  <form>
+    <table>
+      <tr>
+        <td colspan="5" class="top-title">טופס 101 המכללה האקדמית</td>
+      </tr>
+      <tr>
+        <td colspan="5" class="sub-title">* שדות המסומנים בכוכבית הם שדות חובה</td>
+      </tr>
+      <tr>
+        <td colspan="5"><label>שנת המס:</label> <input type="text" value="2023"></td>
+      </tr>
+
+      <tr>
+        <td colspan="5"><strong>פרטי המעסיק</strong></td>
+      </tr>
+      <tr>
+        <td colspan="2"><label>שם:</label> <input type="text"></td>
+        <td><label>מגזר:</label> <input type="text"></td>
+        <td><label>מספר סניף:</label> <input type="text" value="6086"></td>
+        <td><label>מספר תיק ניכויים:</label> <input type="text" value="900000000"></td>
+      </tr>
+
+      <tr>
+        <td colspan="5"><strong>פרטי העובד/ת</strong></td>
+      </tr>
+      <tr>
+        <td colspan="2"><label>שם פרטי:</label> <input type="text"></td>
+        <td colspan="2"><label>שם משפחה:</label> <input type="text"></td>
+        <td><label>שם קודם:</label> <input type="text"></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <label>סוג מזהה:</label>
+          <input type="radio" name="id_type" checked> תעודת זהות
+          <input type="radio" name="id_type"> דרכון (עבור אזרח זר)
+        </td>
+        <td colspan="2"><label>מספר מזהה:</label> <input type="text"></td>
+        <td><label>צילום תעודת זהות:</label> <input type="file"></td>
+      </tr>
+      <tr>
+        <td><label>תאריך לידה:</label> <input type="text" placeholder="dd/mm/yyyy"></td>
+        <td><label>תאריך עליה:</label> <input type="text" placeholder="dd/mm/yyyy"></td>
+        <td colspan="3"></td>
+      </tr>
+      <tr>
+        <td><label>יישוב:</label> <select><option>תל אביב</option></select></td>
+        <td><label>רחוב:</label> <input type="text"></td>
+        <td><label>מספר בית:</label> <input type="text"></td>
+        <td><label>מיקוד:</label> <input type="text"></td>
+        <td><label>טלפון נייד:</label> <input type="text"></td>
+      </tr>
+      <tr>
+        <td colspan="5"><label>כתובת דוא"ל:</label> <input type="email"></td>
+      </tr>
+      <tr>
+        <td><label>מין:</label><br>
+          <input type="radio" name="gender"> זכר
+          <input type="radio" name="gender"> נקבה
+        </td>
+        <td><label>מצב משפחתי:</label><br>
+          <input type="radio" name="status"> רווק/ה
+          <input type="radio" name="status"> נשוי/אה
+          <input type="radio" name="status"> גרוש/ה
+          <input type="radio" name="status"> אלמן/ה
+        </td>
+        <td><label>תושב ישראל:</label><br>
+          <input type="radio" name="citizen"> כן
+          <input type="radio" name="citizen"> לא
+        </td>
+        <td colspan="2"><label>חבר קיבוץ:</label><br>
+          <input type="radio" name="kibbutz"> כן
+          <input type="radio" name="kibbutz"> לא
+        </td>
+      </tr>
+      <tr>
+        <td colspan="5"><label>קופת חולים:</label>
+          <input type="radio" name="kupat"> כללית
+          <input type="radio" name="kupat"> מכבי
+          <input type="radio" name="kupat"> מאוחדת
+          <input type="radio" name="kupat"> לאומית
+        </td>
+      </tr>
+      <tr>
+        <td colspan="5" style="text-align: left;"><input type="submit" value="שלח טופס"></td>
+      </tr>
+    </table>
+  </form>
 </body>
 </html>
