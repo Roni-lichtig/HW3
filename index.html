@@ -15,15 +15,15 @@
         <td colspan="5" class="sub-title">* שדות המסומנים בכוכבית הם שדות חובה</td>
       </tr>
       <tr>
-        <td colspan="5"><label>שנת המס:</label> <input type="text" value="2023"></td>
+        <td colspan="5"><label>שנת המס:</label> <input type="text" value="2023" readonly></td>
       </tr>
 
       <tr>
         <td colspan="5"><strong>פרטי המעסיק</strong></td>
       </tr>
       <tr>
-        <td colspan="2"><label>שם:</label> <input type="text"></td>
-        <td><label>מגזר:</label> <input type="text"></td>
+        <td colspan="2"><label>שם:</label> <input type="text" name="employer_name" value="המכללה האקדמית תל אביב יפו"></td>
+        <td><label>מגזר:</label> <input type="text" name="sector" value="חינוך והשכלה"></td>
         <td><label>מספר סניף:</label> <input type="text" value="6086"></td>
         <td><label>מספר תיק ניכויים:</label> <input type="text" value="900000000"></td>
       </tr>
@@ -51,8 +51,26 @@
         <td colspan="3"></td>
       </tr>
       <tr>
-        <td><label>יישוב:</label> <select><option>תל אביב</option></select></td>
-        <td><label>רחוב:</label> <input type="text"></td>
+        <td><label>יישוב:</label> 
+          <select name="city" id="city">
+            <option value="">בחר</option>
+            <option value="תל אביב">תל אביב</option>
+            <option value="ירושלים">ירושלים</option>
+            <option value="חיפה">חיפה</option>
+            <option value="באר שבע">באר שבע</option>
+            <option value="אילת">אילת</option>
+          </select>
+        </td>
+        <td><label>רחוב:</label> 
+          <select name="street" id="street">
+            <option value="">בחר</option>
+            <option value="דיזנגוף">דיזנגוף</option>
+            <option value="הרצל">הרצל</option>
+            <option value="העצמאות">העצמאות</option>
+            <option value="אלנבי">אלנבי</option>
+            <option value="בן גוריון">בן גוריון</option>
+          </select>
+        </td>
         <td><label>מספר בית:</label> <input type="text"></td>
         <td><label>מיקוד:</label> <input type="text"></td>
         <td><label>טלפון נייד:</label> <input type="text"></td>
